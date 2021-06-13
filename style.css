@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-color: cornflowerblue;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-evenly;
+    margin: 30px 0 0 45px
+}
+
+.product__card {
+    position: relative;
+    background-color: lightgray;
+    width: 20rem;
+    height: 30rem;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, 
+                rgba(0, 0, 0, 0.12) 0px -12px 30px, 
+                rgba(0, 0, 0, 0.12) 0px 4px 6px, 
+                rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+                rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.product__image {
+    position: absolute;
+    bottom: 7.5rem;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    clip-path: inset(25% 0 25% 0 round 10px 10px 0 0);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 15rem;
+    left: 0;
+    background-color: black;
+    opacity: 0.5;
+    clip-path: inset(0 0 0 0 round 10px 10px 0 0);
+}
+
+.overlay:hover {
+    transition: 300ms ease-in-out;
+    opacity: 0;
+}
+
+.product__name {    
+    text-align: center;
+    position: inherit;
+    top: 55%;
+}
+
+.product__description {
+    text-align: center;
+    position: inherit;
+    top: 60%;
+}
+
+.product__order {
+    position: inherit;
+    text-align: center;
+    top: 65%;
+}
+
+.order__button {
+    background-color: black;
+    font-family: 'Poppins';
+    font-size: 20px;
+    color: white;
+    border-style: none;
+    border-radius: 10px;
+
+    padding: 10px 40px;
+}
+
+.order__button:hover {
+    background-color: gray;
+    transition: 300ms ease-in-out;
+}
+
+.order__button:active {
+    background-color: black;
+}
